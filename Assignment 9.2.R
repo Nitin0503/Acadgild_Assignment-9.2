@@ -1,1 +1,7 @@
-prop.test(table(mtcars$am)[2],nrow(mtcars),p=.4,alternative = "less",conf.level = .99,correct=FALSE)
+View(mtcars)
+library(readr)
+library(psych)
+p<-13/(13+19)
+(p-.4)/sqrt(.4*.6/(13+19))
+prop.test(13,13+19,p=.4,alternative = "less",conf.level = .95, correct = FALSE)
+prop.test(13,32,p=.4,alternative = "less",conf.level = .95, correct = FALSE)
